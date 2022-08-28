@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Mulish:wght@200;400;600;700&family=Oswald:wght@400;700&family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 25px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  width: 115px;
+  height: 50px;
+  background-color: rgb(250, 203, 34);
+  border: none;
+  margin-top: 30px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#container {
+  height: 500px;
+  width: 500px;
+  background-image: url("/Users/michaelgalan/Desktop/SUMMER2022/3dBackgroundBoxes/Giph/spiderGiph.gif");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#container3 {
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 125px 125px 125px 125px;
+  justify-content: center;
+  align-content: center;
+
+  position: relative;
+  grid-gap: 25px;
+  transition: all 0.5s;
+}
+
+.box {
+  background-image: url("/Users/michaelgalan/Desktop/SUMMER2022/3dBackgroundBoxes/Giph/spiderGiph.gif");
+  background-size: 500px 500px;
+  /* position: absolute; */
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+  /* box-shadow: 0px 10px 0 0px rgb(250, 203, 34),
+    10px 0px 0px 0px rgb(246, 229, 140); */
+  height: 121.5px;
+  width: 125px;
+  position: relative;
+}
+
+.box::after {
+  content: "";
+  width: 12px;
+  height: 124px;
+  position: absolute;
+  left: 125px;
+  top: 8.25px;
+  background-color: rgb(246, 229, 140);
+  transform: skewY(55deg);
+  transform-origin: top;
+  z-index: -1;
+}
+
+.box::before {
+  content: "";
+  width: 126.5px;
+  height: 17px;
+  position: absolute;
+  top: 122px;
+  left: 5px;
+  background-color: rgb(250, 203, 34);
+  transform: skewX(35deg);
+  transform-origin: center;
+  z-index: ;
+}
+
+.box1 {
+}
+
+.box2 {
+  background-position: -125px 0px;
+}
+
+.box3 {
+  background-position: -250px 0px;
+}
+
+.box4 {
+  background-position: -375px 0px;
+}
+
+.box5 {
+  background-position: 0px -125px;
+}
+
+.box6 {
+  background-position: -125px -125px;
+}
+
+.box7 {
+  background-position: -250px -125px;
+}
+
+.box8 {
+  background-position: -375px -125px;
+}
+
+.box9 {
+  background-position: 0px -250px;
+}
+
+.box10 {
+  background-position: -125px -250px;
+}
+
+.box11 {
+  background-position: -250px -250px;
+}
+
+.box12 {
+  background-position: -375px -250px;
+}
+
+.box13 {
+  background-position: 0px -375px;
+}
+
+.box14 {
+  background-position: -125px -375px;
+}
+
+.box15 {
+  background-position: -250px -375px;
+}
+
+.box16 {
+  background-position: -375px -375px;
+}
